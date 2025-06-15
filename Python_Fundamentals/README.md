@@ -9,3 +9,14 @@ Today, I learned about:
 
 **Conceptual Exercise 1.1.1 Notes:**
 * My flowchart for "making a cup of coffee" included steps like: START -> Boil Water -> Add Coffee -> Add Sugar (decision if needed) -> Stir -> END.
+
+
+## Day 2
+
+Learned print and print(f"") uses
+
+## Day 3:
+
+------ Exercise Question ------
+
+Question: What will be the output of print(5 / 2) and print(5 // 2)? Explain the difference.
