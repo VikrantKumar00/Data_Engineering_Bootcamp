@@ -66,3 +66,44 @@ original_text = "Data"
 modified_text = original_text.upper()
 print(f"Original text: '{original_text}'")
 print(f"Modified text: '{modified_text}'")
+
+# ----- Exercises -----
+
+print("\n--- Exercises ---")
+
+print('''Exercise : Create a new Python file named day_8_exercises.py in your Python_Fundamentals folder and write code for the following:
+
+Email Formatting:
+Take an email address raw_email = " User.Name@EXAMPLE.COM ".
+Use string methods to clean it: remove leading/trailing spaces, convert to lowercase. Print the cleaned email.
+Data Extraction:
+You have a log entry: log_entry = "ERROR: File 'config.json' not found in path /app/data"
+Extract the filename 'config.json' from this string using find() and string slicing, or split(). Print the extracted filename. (Hint: log_entry[start:end] is string slicing).
+Path Builder:
+You have a list of directories (imagine these are parts of a file path): dir_parts = ["home", "user", "documents", "reports"]
+Use the join() method to combine them into a Unix-style file path (e.g., /home/user/documents/reports). Print the full path.
+Data Validation:
+You receive a user input string for a product code: product_code_input = "PROD123".
+Check if the product_code_input starts with "PROD" AND if the remaining part (after "PROD") consists only of digits. Print True or False. (Hint: product_code_input[4:] would give you "123").''')
+
+raw_email = " User.Name@EXAMPLE.COM "
+cleaned_email = raw_email.strip().lower()
+print(f'Cleaned Email: "{cleaned_email}"')
+
+log_entry = "ERROR: File 'config.json' not found in path /app/data"
+start_index = log_entry.find("'")
+end_index = log_entry.find("'", start_index + 1)
+extracted_data = log_entry[start_index+1:end_index]
+print(extracted_data)
+
+dir_path = ["home","user","documents","reports"]
+full_path = "/"+"/".join(dir_path)
+print(full_path)
+
+product_code_input = "PROD123"
+if product_code_input.startswith("PROD") and product_code_input[4:].isdigit()  == True:
+    print(True)
+else:
+    print(False)
+
+
